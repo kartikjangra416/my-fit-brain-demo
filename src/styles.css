@@ -1,0 +1,58 @@
+.bg-light  {
+    background-color: #4ad38f !important;
+   
+   }
+   .btn {
+    background-color: #7a1354 !important;
+   }
+   .nav-link {
+    color: #ffff !important;
+    font-weight: 700;
+    font-size: 1.2rem;
+   }
+   p {
+    font-size: 0.8rem;
+   }
+
+   .card-body {
+    background-color: #6c738f !important;
+    color: white !important;
+   }
+    .book-div {
+        padding: 80px 0;
+    }
+
+     .card-img-top {
+        height: 210px !important;
+     }
+     .modal .modal-dialog {
+    position: absolute;
+    width: 100%;
+    right: 10px;
+    bottom: 10px;
+    margin: 0;
+}
+     .modal .modal-dialog  {
+    top: 10px;
+    right: 10px;
+}
+
+/* Align navbar links to the right */
+.navbar-collapse {
+    display: flex;
+    justify-content: flex-end; /* Align links to the right */
+}
+
+.navbar-nav {
+    margin-right: 0; /* Ensure no margin pushing items away */
+}
+
+/* Align login/logoff buttons to the right */
+.d-flex.align-items-center {
+    margin-left: auto; /* Push buttons to the right side */
+}
+
+/* Optional: Adjust spacing between buttons and nav items */
+.navbar-nav .nav-item {
+    margin-left: 20px; /* Adjust as needed */
+}

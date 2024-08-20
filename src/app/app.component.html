@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <!-- Container wrapper -->
+  <div class="container-fluid">
+    <!-- Logo on the left side -->
+    <a class="navbar-brand me-3" href="#">
+      <img src="https://myfitbrain.in/frontend/images/new/logo.png" alt="Logo" class="logo-img" height="40px" width="176px"> <!-- Update the path to your logo -->
+    </a>
+
+    <!-- Toggle button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCenteredExample"
+      aria-controls="navbarCenteredExample" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarCenteredExample">
+      <!-- Right links -->
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/therapists']">Therapist</a>
+        </li>
+    
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/blog']">Blog</a>
+        </li>
+        <li class="nav-item">
+          <!-- Use anchor tag for routing -->
+          <a class="btn btn-primary" [routerLink]="['/login']">Login</a>
+        </li>
+      </ul>
+    </div>
+    <!-- Collapsible wrapper -->
+  </div>
+  <!-- Container wrapper -->
+</nav>
+<app-chatbot></app-chatbot>
+
+<router-outlet></router-outlet>
+

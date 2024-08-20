@@ -1,0 +1,147 @@
+<section class="schedule-section spad pt-4">
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-lg-8">
+                <div class="section-title">
+                    <h3>Online Counselling</h3>
+                    <h2>Mental health support at your fingertips</h2>
+                    <p>Best Online Counseling by leading Online Psychologists at My Fit Brain</p>
+                    <p>Get the best online psychological counselling services at My Fit Brain. Talk with best clinical psychologist, therapist online.</p>
+                    <a routerLink="/therapists" class="btn btn-primary mt-3">Start Now</a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <img src="https://myfitbrain.in/frontend/images/new/home-banner.png" alt="Banner Image" class="img-fluid">
+            </div>
+        </div>
+
+        <!-- Category Buttons Centered -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="d-flex justify-content-center">
+                    <button class="btn btn-primary mx-2" (click)="filterCategory('top-therapists')">Top Therapists</button>
+                    <button class="btn btn-primary mx-2" (click)="filterCategory('marital-counselling')">Marital Counselling</button>
+                    <button class="btn btn-primary mx-2" (click)="filterCategory('sexual-counselling')">Sexual Counselling</button>
+                    <button class="btn btn-primary mx-2" (click)="filterCategory('depression-counselling')">Depression Counselling</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Doctors List -->
+        <div class="row">
+            <div class="col-md-3 mb-4" *ngFor="let doctor of filteredDoctors">
+                <div class="card">
+                    <img class="card-img-top" src="https://myfitbrain.in/images/doctors/dr-neha-mehta.jpg" alt="Doctor Image">
+                    <div class="card-body">
+                        <h5 class="card-title">{{doctor.name}}</h5>
+                        <p class="card-text">
+                            <strong>Rating:</strong> {{doctor.rating}}<br>
+                            <strong>Location:</strong> {{doctor.location}}<br>
+                            <strong>Languages:</strong> {{doctor.languages}}<br>
+                            <strong>Fee:</strong> {{doctor.fee}}
+                        </p>
+                        <a class="book-now-button" [routerLink]="['/bookform']">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Why Choose Us Section -->
+        <div class="row text-center my-5">
+            <div class="col-lg-6">
+                <img src="https://myfitbrain.in/frontend/images/new/choose2.png" alt="Choose Us Image Left" class="img-fluid">
+            </div>
+            <div class="col-lg-6">
+                <h2>Top Online Therapy Platform</h2>
+                <p>Best Online Therapy for you</p>
+                <p>24*7 Support from our Team</p>
+                <h3>About</h3>
+                <p>Get started with a free assessment</p>
+                <p>Help you and your family live a healthier, happier life.</p>
+                <p>My Fit Brain is the best therapy platform available today.</p>
+                <img src="https://myfitbrain.in/frontend/images/new/choose1.png" alt="Choose Us Image Right" class="img-fluid">
+            </div>
+        </div>
+
+        <!-- Green Stats Bar -->
+        <div class="stats-bar text-white text-center py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h4>+8000</h4>
+                        <p>Sessions</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>+20</h4>
+                        <p>Awards</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>+17000</h4>
+                        <p>Clients Base</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>+400</h4>
+                        <p>Experienced Therapists</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Detailed Description -->
+        <section class="detailed-description py-5">
+            <div class="container">
+                <h2>We Take Pride in Offering Online Counseling in India</h2>
+                <p>Our team of licensed and experienced counselors provides clients with various mental health support. Best online counseling services. We understand the importance of accessibility and convenience in today's fast-paced world, so we offer our services online.</p>
+                <p>Our counselors are trained to provide personalized and confidential support to each client, tailoring their approach to meet each individual's unique needs and goals. Whether you're struggling with anxiety, depression, relationship issues, or any other mental health concern, we are here to help.</p>
+                <p>With our online counseling in India, you can access support from the comfort of your own home or wherever is most convenient for you. We are committed to helping you achieve your mental health goals and improve your well-being.</p>
+                <h3>Benefits of Online Counseling at My Fit Brain</h3>
+                <p>For some, counseling may not be necessary, but having a healthy mind is as important as having a healthy body. There are many benefits one can gain from counseling. In counseling, you can give voice to all your feelings, emotions, share your difficulties, and any other thing with a professional. A therapist can provide you with new ways by which you can cope with or deal with different challenges. Apart from this, a therapist helps you deal with deteriorating mental health. Here we are listing some of the benefits one can gain from a therapist:</p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5>Become a Counsellor</h5>
+                        <p>If you feel you can listen to people or guide them towards a better life or you are already a therapist & wishes to render your services online while getting paid, then you are at the right place.</p>
+                        <a href="#" class="btn btn-primary">Login</a>
+                        <a href="#" class="btn btn-primary">Join Our Team</a>
+                    </div>
+                    <div class="col-md-6">
+                        <h5>Site</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Therapists</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Packages</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Videos</a></li>
+                            <li><a href="#">Important Links</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Terms & Condition</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p>Follow Us:</p>
+                        <a href="#" class="me-2">Face</a>
+                        <a href="#" class="me-2">YouTube</a>
+                        <a href="#" class="me-2">Insta</a>
+                        <a href="#" class="me-2">Twit</a>
+                        <a href="#" class="me-2">Insta</a>
+                        <a href="mailto:help@myfitbrain.in">Mail</a>
+                        <p>Scan to Download Our App</p>
+                        <a href="#"><img src="https://myfitbrain.in/frontend/images/new/g-pay.png" alt="GPay" class="img-fluid"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</section>

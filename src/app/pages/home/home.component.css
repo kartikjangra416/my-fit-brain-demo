@@ -1,0 +1,244 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Container Styles */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Schedule Section */
+.schedule-section {
+    background: #f9f9f9;
+    padding: 40px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-title h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #222;
+    margin: 10px 0;
+}
+
+.section-title p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+/* Category Buttons */
+.d-flex .btn {
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.d-flex .btn:hover {
+    background-color: #0056b3;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Doctors List */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    background: #fff;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-text {
+    font-size: 16px;
+    color: #555;
+}
+
+.book-now-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.book-now-button:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+/* Why Choose Us Section */
+.text-center {
+    text-align: center;
+}
+
+.text-center h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}
+
+.text-center p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Stats Bar */
+.stats-bar {
+    background-color: #28a745;
+    padding: 20px 0;
+    color: white;
+}
+
+.stats-bar h4 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.stats-bar p {
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Detailed Description */
+.detailed-description {
+    padding: 40px 20px;
+    background: #fff;
+}
+
+.detailed-description h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #222;
+}
+
+.detailed-description p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer h5 {
+    font-size: 20px;
+    color: #f8f9fa;
+}
+
+.footer ul {
+    padding: 0;
+    list-style: none;
+}
+
+.footer ul li {
+    margin: 5px 0;
+}
+
+.footer ul li a {
+    color: #f8f9fa;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer .btn {
+    margin-right: 10px;
+}
+
+.footer .social-icons a {
+    color: #f8f9fa;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.footer .social-icons a:hover {
+    color: #007bff;
+}
+
+.footer img {
+    width: 100px;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section-title h2 {
+        font-size: 28px;
+    }
+
+    .section-title h3 {
+        font-size: 20px;
+    }
+
+    .detailed-description h2 {
+        font-size: 24px;
+    }
+
+    .detailed-description p {
+        font-size: 14px;
+    }
+}

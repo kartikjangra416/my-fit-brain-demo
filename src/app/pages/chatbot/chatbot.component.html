@@ -1,0 +1,22 @@
+<div class="chatbot-container">
+  <div class="chatbot-icon" (click)="toggleChat($event)">
+    <img src="https://img.freepik.com/free-vector/cute-bot-say-users-hello-chatbot-greets-online-consultation_80328-195.jpg?semt=ais_hybrid" alt="Chatbot Icon">
+  </div>
+  <div class="chat-window" *ngIf="isChatOpen">
+    <div class="chat-header">
+      <h5>Chat with us</h5>
+      <button (click)="toggleChat($event)">X</button>
+    </div>
+    <div class="chat-body">
+      <div *ngFor="let message of messages">
+        <div class="message" [style.text-align]="message.sender === 'user' ? 'right' : 'left'" [style.background-color]="message.sender === 'user' ? '#e1f5fe' : '#f1f1f1'">
+          {{ message.text }}
+        </div>
+      </div>
+    </div>
+    <div class="chat-footer">
+      <input type="text" [(ngModel)]="userMessage" placeholder="Type a message...">
+      <button (click)="sendMessage()">Send</button>
+    </div>
+  </div>
+</div>
